@@ -14,8 +14,6 @@
 
 @implementation MenuTVC
 
-
-
 - (void) setEntries: (NSArray *) entries {
     _entries = entries;
     [self.tableView reloadData];
@@ -38,7 +36,6 @@
     return [UIImage imageNamed: [self.entries[row][@"image"] description]];
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Entry";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
@@ -46,7 +43,6 @@
     cell.textLabel.text = [self titleForRow:indexPath.row];
     cell.detailTextLabel.text = [self subtitleForRow: indexPath.row];
     cell.imageView.image = [self imageForRow: indexPath.row];
-    
     
     return cell;
 }
