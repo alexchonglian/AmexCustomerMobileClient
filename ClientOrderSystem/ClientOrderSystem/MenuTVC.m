@@ -43,6 +43,17 @@
     cell.textLabel.text = [self titleForRow:indexPath.row];
     cell.detailTextLabel.text = [self subtitleForRow: indexPath.row];
     cell.imageView.image = [self imageForRow: indexPath.row];
+    /*
+    UIStepper* stepper = [[UIStepper alloc] init];
+    stepper.frame = CGRectMake(210, 40, 40, 5);
+    */
+    
+    UIButton *addButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    addButton.frame = CGRectMake(270, 30, 40, 25);
+    [addButton setTitle:@"+ 1" forState:UIControlStateNormal];
+    
+    [cell addSubview:addButton];
+    //[cell.contentView addSubview: stepper];
     
     return cell;
 }
