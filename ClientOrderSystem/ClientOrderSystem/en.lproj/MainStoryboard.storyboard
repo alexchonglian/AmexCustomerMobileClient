@@ -248,7 +248,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="cLY-u9-8Fc" kind="push" id="cNH-h3-WLl"/>
+                                    <segue destination="cLY-u9-8Fc" kind="push" identifier="Show Entry Detail" id="cNH-h3-WLl"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -271,24 +271,34 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAv-0c-xgj">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Detail">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="dC9-Ek-uUE"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZY-Cs-rDA">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8b-6q-frm">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="7yy-XQ-8Fd"/>
+                                    <constraint firstAttribute="height" constant="176" id="mCd-WN-7Cv"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="pAv-0c-xgj" firstAttribute="centerX" secondItem="afS-48-am5" secondAttribute="centerX" type="default" id="LYF-iv-8S8"/>
-                            <constraint firstItem="pAv-0c-xgj" firstAttribute="centerY" secondItem="afS-48-am5" secondAttribute="centerY" type="default" id="rzO-93-BWp"/>
+                            <constraint firstItem="dC9-Ek-uUE" firstAttribute="leading" secondItem="afS-48-am5" secondAttribute="leading" constant="66" id="677-X1-9e5"/>
+                            <constraint firstItem="H8b-6q-frm" firstAttribute="centerX" secondItem="afS-48-am5" secondAttribute="centerX" type="default" id="8tA-a4-4eh"/>
+                            <constraint firstItem="H8b-6q-frm" firstAttribute="top" secondItem="afS-48-am5" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Obe-YV-TFt"/>
+                            <constraint firstItem="NZY-Cs-rDA" firstAttribute="centerY" secondItem="dC9-Ek-uUE" secondAttribute="centerY" type="default" id="aKV-px-7et"/>
+                            <constraint firstAttribute="bottom" secondItem="dC9-Ek-uUE" secondAttribute="bottom" constant="116" id="eKS-bW-Bfu"/>
+                            <constraint firstAttribute="trailing" secondItem="NZY-Cs-rDA" secondAttribute="trailing" constant="86" id="v8M-hT-UJY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rGR-dX-pNQ"/>
+                    <connections>
+                        <outlet property="imageView" destination="H8b-6q-frm" id="k3m-vr-Hlp"/>
+                        <outlet property="numberLabel" destination="NZY-Cs-rDA" id="ud3-rh-kl8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WIP-RU-9Ve" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -386,6 +396,10 @@
         </class>
         <class className="MenuDetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="numberLabel" candidateClass="UILabel"/>
+            </relationships>
         </class>
         <class className="MenuTVC" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuTVC.h"/>

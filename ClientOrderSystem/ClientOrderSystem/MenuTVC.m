@@ -51,11 +51,34 @@
     UIButton *addButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     addButton.frame = CGRectMake(270, 30, 40, 25);
     [addButton setTitle:@"+ 1" forState:UIControlStateNormal];
-    
+    [addButton addTarget:self action:@selector(printOut:) forControlEvents:UIControlEventTouchUpInside];
+    addButton.tag = indexPath.row;
     [cell addSubview:addButton];
     //[cell.contentView addSubview: stepper];
     
     return cell;
+}
+
+
+- (void)printOut: (UIButton *)sender {
+    UIButton *button = (UIButton *)sender;
+    NSLog(@"%@ %@", [self titleForRow:button.tag],[self subtitleForRow:button.tag]);
+}
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([sender isKindOfClass:[UITableViewCell class]]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        if (indexPath) {
+            if ([segue.identifier isEqualToString:@"Show Entry Detail"]) {
+                if ([segue.destinationViewController respondsToSelector:@selector(setImageURI:)]) {
+                    NSString *uri = [self.entries[indexPath.row][@"image"] description];
+                    [segue.destinationViewController performSelector:@selector(setImageURI:) withObject:uri];
+                    [segue.destinationViewController setTitle:[self titleForRow:indexPath.row]];
+                }
+            }
+        }
+    }
 }
 
 

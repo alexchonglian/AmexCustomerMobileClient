@@ -9,30 +9,31 @@
 #import "MenuDetailViewController.h"
 
 @interface MenuDetailViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UILabel *numberLabel;
 
 @end
 
 @implementation MenuDetailViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    if (self.imageURI) {
+        [self updateImage];
+    }
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setImageURI:(NSString *)imageURI {
+    _imageURI = imageURI;
+    [self updateImage];
 }
+
+- (void)updateImage {
+    self.imageView.image = [UIImage imageNamed:self.imageURI];
+}
+
 
 @end
