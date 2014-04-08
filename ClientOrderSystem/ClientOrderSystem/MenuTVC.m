@@ -14,6 +14,10 @@
 
 @implementation MenuTVC
 
+#define ALL_ORDERS @"AllOrderes"
+#define ORDERED_ENTRIES @"OrderedEntries"
+#define NEW_ORDER @"NewOrder"
+
 - (void) setEntries: (NSArray *) entries {
     _entries = entries;
     [self.tableView reloadData];
@@ -63,6 +67,27 @@
 - (void)printOut: (UIButton *)sender {
     UIButton *button = (UIButton *)sender;
     NSLog(@"%@ %@", [self titleForRow:button.tag],[self subtitleForRow:button.tag]);
+    //NSString *newEntry = [NSString stringWithFormat:@"%@ %@", [self titleForRow:button.tag],[self subtitleForRow:button.tag]];
+    //[self addNewEntryToOrderedEntries: newEntry];
+}
+
+
+- (void)addNewEntryToOrderedEntries:(NSString *)newEntry {
+    NSMutableDictionary *allOrdersUD = [[[NSUserDefaults standardUserDefaults] dictionaryForKey:ALL_ORDERS] mutableCopy];
+    if (!allOrdersUD) {
+        allOrdersUD = [[NSMutableDictionary alloc] init];
+    }
+    NSMutableArray *orderedEntriesUD = allOrdersUD[ORDERED_ENTRIES];
+    if (!orderedEntriesUD) {
+        orderedEntriesUD = [[NSMutableArray alloc] init];
+    }
+    // put entry into dictionay
+    
+    [orderedEntriesUD addObject:newEntry];
+    [allOrdersUD[ORDERED_ENTRIES] addObject:orderedEntriesUD];
+    NSLog(@"%@", orderedEntriesUD);
+    [[NSUserDefaults standardUserDefaults] setObject:orderedEntriesUD forKey:ALL_ORDERS];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 
@@ -86,10 +111,7 @@
 
 {
     
-    [super viewDidLoad];
-    
-    // Initialize table data
-    
+    [super viewDidLoad];   
     self.entries = @[
                      
                      @{
