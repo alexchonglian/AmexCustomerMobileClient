@@ -54,7 +54,7 @@
     
     UIButton *addButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     addButton.frame = CGRectMake(270, 30, 40, 25);
-    [addButton setTitle:@"+ 1" forState:UIControlStateNormal];
+    [addButton setTitle:@"+1" forState:UIControlStateNormal];
     [addButton addTarget:self action:@selector(printOut:) forControlEvents:UIControlEventTouchUpInside];
     addButton.tag = indexPath.row;
     [cell addSubview:addButton];
@@ -67,26 +67,21 @@
 - (void)printOut: (UIButton *)sender {
     UIButton *button = (UIButton *)sender;
     NSLog(@"%@ %@", [self titleForRow:button.tag],[self subtitleForRow:button.tag]);
-    //NSString *newEntry = [NSString stringWithFormat:@"%@ %@", [self titleForRow:button.tag],[self subtitleForRow:button.tag]];
-    //[self addNewEntryToOrderedEntries: newEntry];
+    NSString *newEntry = [NSString stringWithFormat:@"%@ %@", [self titleForRow:button.tag],[self subtitleForRow:button.tag]];
+    [self addNewEntryToOrderedEntries: newEntry];
 }
 
 
 - (void)addNewEntryToOrderedEntries:(NSString *)newEntry {
-    NSMutableDictionary *allOrdersUD = [[[NSUserDefaults standardUserDefaults] dictionaryForKey:ALL_ORDERS] mutableCopy];
+    
+    NSMutableArray *allOrdersUD = [[[NSUserDefaults standardUserDefaults] arrayForKey:ALL_ORDERS] mutableCopy];
     if (!allOrdersUD) {
-        allOrdersUD = [[NSMutableDictionary alloc] init];
-    }
-    NSMutableArray *orderedEntriesUD = allOrdersUD[ORDERED_ENTRIES];
-    if (!orderedEntriesUD) {
-        orderedEntriesUD = [[NSMutableArray alloc] init];
+        allOrdersUD = [[NSMutableArray alloc] init];
     }
     // put entry into dictionay
-    
-    [orderedEntriesUD addObject:newEntry];
-    [allOrdersUD[ORDERED_ENTRIES] addObject:orderedEntriesUD];
-    NSLog(@"%@", orderedEntriesUD);
-    [[NSUserDefaults standardUserDefaults] setObject:orderedEntriesUD forKey:ALL_ORDERS];
+    [allOrdersUD addObject:newEntry];
+    NSLog(@"%@", allOrdersUD);
+    [[NSUserDefaults standardUserDefaults] setObject:allOrdersUD forKey:ALL_ORDERS];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
