@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6325368818EF4BC3002C34C5 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 6325368618EF4BC3002C34C5 /* menu.png */; };
+		6325368918EF4BC3002C34C5 /* pay.png in Resources */ = {isa = PBXBuildFile; fileRef = 6325368718EF4BC3002C34C5 /* pay.png */; };
+		6325368D18EF4CDC002C34C5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6325368C18EF4CDC002C34C5 /* Icon.png */; };
+		6325368F18EF4D7D002C34C5 /* msg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6325368E18EF4D7D002C34C5 /* msg.png */; };
+		6341D85718E34BBB0069ABB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6341D85618E34BBB0069ABB0 /* UIKit.framework */; };
+		6341D85918E34BBB0069ABB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6341D85818E34BBB0069ABB0 /* Foundation.framework */; };
+		6341D85B18E34BBB0069ABB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6341D85A18E34BBB0069ABB0 /* CoreGraphics.framework */; };
+		6341D86118E34BBB0069ABB0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6341D85F18E34BBB0069ABB0 /* InfoPlist.strings */; };
+		6341D86318E34BBB0069ABB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6341D86218E34BBB0069ABB0 /* main.m */; };
+		6341D86718E34BBB0069ABB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6341D86618E34BBB0069ABB0 /* AppDelegate.m */; };
+		6341D86918E34BBB0069ABB0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6341D86818E34BBB0069ABB0 /* Default.png */; };
+		6341D86B18E34BBB0069ABB0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6341D86A18E34BBB0069ABB0 /* Default@2x.png */; };
+		6341D86D18E34BBB0069ABB0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6341D86C18E34BBB0069ABB0 /* Default-568h@2x.png */; };
+		6341D87018E34BBB0069ABB0 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6341D86E18E34BBB0069ABB0 /* MainStoryboard.storyboard */; };
+		6341D87B18E34F9F0069ABB0 /* MenuTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6341D87A18E34F9F0069ABB0 /* MenuTVC.m */; };
+		634CC8CC18FCC8B1002DDA71 /* OrderTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 634CC8CB18FCC8B1002DDA71 /* OrderTVC.m */; };
+		637549A718E36CED00CC4231 /* angry_birds_cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6375499718E36CED00CC4231 /* angry_birds_cake.jpg */; };
+		637549A818E36CED00CC4231 /* creme_brelee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6375499818E36CED00CC4231 /* creme_brelee.jpg */; };
+		637549A918E36CED00CC4231 /* egg_benedict.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6375499918E36CED00CC4231 /* egg_benedict.jpg */; };
+		637549AA18E36CED00CC4231 /* full_breakfast.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6375499A18E36CED00CC4231 /* full_breakfast.jpg */; };
+		637549AB18E36CED00CC4231 /* green_tea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6375499B18E36CED00CC4231 /* green_tea.jpg */; };
+		637549AC18E36CED00CC4231 /* ham_and_cheese_panini.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6375499C18E36CED00CC4231 /* ham_and_cheese_panini.jpg */; };
+		637549AD18E36CED00CC4231 /* ham_and_egg_sandwich.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6375499D18E36CED00CC4231 /* ham_and_egg_sandwich.jpg */; };
+		637549AE18E36CED00CC4231 /* hamburger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6375499E18E36CED00CC4231 /* hamburger.jpg */; };
+		637549AF18E36CED00CC4231 /* instant_noodle_with_egg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6375499F18E36CED00CC4231 /* instant_noodle_with_egg.jpg */; };
+		637549B018E36CED00CC4231 /* japanese_noodle_with_pork.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 637549A018E36CED00CC4231 /* japanese_noodle_with_pork.jpg */; };
+		637549B118E36CED00CC4231 /* mushroom_risotto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 637549A118E36CED00CC4231 /* mushroom_risotto.jpg */; };
+		637549B218E36CED00CC4231 /* noodle_with_bbq_pork.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 637549A218E36CED00CC4231 /* noodle_with_bbq_pork.jpg */; };
+		637549B318E36CED00CC4231 /* starbucks_coffee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 637549A318E36CED00CC4231 /* starbucks_coffee.jpg */; };
+		637549B418E36CED00CC4231 /* thai_shrimp_cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 637549A418E36CED00CC4231 /* thai_shrimp_cake.jpg */; };
+		637549B518E36CED00CC4231 /* vegetable_curry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 637549A518E36CED00CC4231 /* vegetable_curry.jpg */; };
+		637549B618E36CED00CC4231 /* white_chocolate_donut.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 637549A618E36CED00CC4231 /* white_chocolate_donut.jpg */; };
+		63AB36B518F27306006D043F /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AB36B418F27306006D043F /* PaymentViewController.m */; };
+		63AB36B818F273B1006D043F /* MenuDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AB36B718F273B1006D043F /* MenuDetailViewController.m */; };
+		63AFB18D18F327F500A0A831 /* RestaurantTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AFB18C18F327F500A0A831 /* RestaurantTVC.m */; };
+		63AFB19618F3309000A0A831 /* IOUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AFB19518F3309000A0A831 /* IOUViewController.m */; };
+		63AFB19818F334DE00A0A831 /* iou.png in Resources */ = {isa = PBXBuildFile; fileRef = 63AFB19718F334DE00A0A831 /* iou.png */; };
+		63AFB19A18F33CEE00A0A831 /* signin.png in Resources */ = {isa = PBXBuildFile; fileRef = 63AFB19918F33CEE00A0A831 /* signin.png */; };
+		63CDEE7918F60B5100FB82AB /* mastercard.png in Resources */ = {isa = PBXBuildFile; fileRef = 63CDEE7618F60B5100FB82AB /* mastercard.png */; };
+		63CDEE7A18F60B5100FB82AB /* amex.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 63CDEE7718F60B5100FB82AB /* amex.jpg */; };
+		63CDEE7B18F60B5100FB82AB /* paypal-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 63CDEE7818F60B5100FB82AB /* paypal-logo.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6325368618EF4BC3002C34C5 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		6325368718EF4BC3002C34C5 /* pay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pay.png; sourceTree = "<group>"; };
+		6325368C18EF4CDC002C34C5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		6325368E18EF4D7D002C34C5 /* msg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = msg.png; path = ../../../../../../Downloads/msg.png; sourceTree = "<group>"; };
+		6341D85318E34BBB0069ABB0 /* Amex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6341D85618E34BBB0069ABB0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6341D85818E34BBB0069ABB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6341D85A18E34BBB0069ABB0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6341D85E18E34BBB0069ABB0 /* ClientOrderSystem-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClientOrderSystem-Info.plist"; sourceTree = "<group>"; };
+		6341D86018E34BBB0069ABB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6341D86218E34BBB0069ABB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6341D86418E34BBB0069ABB0 /* ClientOrderSystem-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClientOrderSystem-Prefix.pch"; sourceTree = "<group>"; };
+		6341D86518E34BBB0069ABB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6341D86618E34BBB0069ABB0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6341D86818E34BBB0069ABB0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		6341D86A18E34BBB0069ABB0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		6341D86C18E34BBB0069ABB0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6341D86F18E34BBB0069ABB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		6341D87918E34F9F0069ABB0 /* MenuTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTVC.h; sourceTree = "<group>"; };
+		6341D87A18E34F9F0069ABB0 /* MenuTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTVC.m; sourceTree = "<group>"; };
+		634CC8CA18FCC8B1002DDA71 /* OrderTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderTVC.h; sourceTree = "<group>"; };
+		634CC8CB18FCC8B1002DDA71 /* OrderTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTVC.m; sourceTree = "<group>"; };
+		6375499718E36CED00CC4231 /* angry_birds_cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angry_birds_cake.jpg; sourceTree = "<group>"; };
+		6375499818E36CED00CC4231 /* creme_brelee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = creme_brelee.jpg; sourceTree = "<group>"; };
+		6375499918E36CED00CC4231 /* egg_benedict.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = egg_benedict.jpg; sourceTree = "<group>"; };
+		6375499A18E36CED00CC4231 /* full_breakfast.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = full_breakfast.jpg; sourceTree = "<group>"; };
+		6375499B18E36CED00CC4231 /* green_tea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = green_tea.jpg; sourceTree = "<group>"; };
+		6375499C18E36CED00CC4231 /* ham_and_cheese_panini.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ham_and_cheese_panini.jpg; sourceTree = "<group>"; };
+		6375499D18E36CED00CC4231 /* ham_and_egg_sandwich.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ham_and_egg_sandwich.jpg; sourceTree = "<group>"; };
+		6375499E18E36CED00CC4231 /* hamburger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hamburger.jpg; sourceTree = "<group>"; };
+		6375499F18E36CED00CC4231 /* instant_noodle_with_egg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = instant_noodle_with_egg.jpg; sourceTree = "<group>"; };
+		637549A018E36CED00CC4231 /* japanese_noodle_with_pork.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = japanese_noodle_with_pork.jpg; sourceTree = "<group>"; };
+		637549A118E36CED00CC4231 /* mushroom_risotto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mushroom_risotto.jpg; sourceTree = "<group>"; };
+		637549A218E36CED00CC4231 /* noodle_with_bbq_pork.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = noodle_with_bbq_pork.jpg; sourceTree = "<group>"; };
+		637549A318E36CED00CC4231 /* starbucks_coffee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = starbucks_coffee.jpg; sourceTree = "<group>"; };
+		637549A418E36CED00CC4231 /* thai_shrimp_cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thai_shrimp_cake.jpg; sourceTree = "<group>"; };
+		637549A518E36CED00CC4231 /* vegetable_curry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vegetable_curry.jpg; sourceTree = "<group>"; };
+		637549A618E36CED00CC4231 /* white_chocolate_donut.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white_chocolate_donut.jpg; sourceTree = "<group>"; };
+		63AB36B318F27306006D043F /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
+		63AB36B418F27306006D043F /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
+		63AB36B618F273B1006D043F /* MenuDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuDetailViewController.h; sourceTree = "<group>"; };
+		63AB36B718F273B1006D043F /* MenuDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuDetailViewController.m; sourceTree = "<group>"; };
+		63AFB18B18F327F500A0A831 /* RestaurantTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantTVC.h; sourceTree = "<group>"; };
+		63AFB18C18F327F500A0A831 /* RestaurantTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantTVC.m; sourceTree = "<group>"; };
+		63AFB19418F3309000A0A831 /* IOUViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOUViewController.h; sourceTree = "<group>"; };
+		63AFB19518F3309000A0A831 /* IOUViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOUViewController.m; sourceTree = "<group>"; };
+		63AFB19718F334DE00A0A831 /* iou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iou.png; sourceTree = "<group>"; };
+		63AFB19918F33CEE00A0A831 /* signin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signin.png; sourceTree = "<group>"; };
+		63CDEE7618F60B5100FB82AB /* mastercard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mastercard.png; sourceTree = "<group>"; };
+		63CDEE7718F60B5100FB82AB /* amex.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = amex.jpg; sourceTree = "<group>"; };
+		63CDEE7818F60B5100FB82AB /* paypal-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "paypal-logo.jpg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6341D85018E34BBB0069ABB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6341D85718E34BBB0069ABB0 /* UIKit.framework in Frameworks */,
+				6341D85918E34BBB0069ABB0 /* Foundation.framework in Frameworks */,
+				6341D85B18E34BBB0069ABB0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6341D84A18E34BBB0069ABB0 = {
+			isa = PBXGroup;
+			children = (
+				6325368C18EF4CDC002C34C5 /* Icon.png */,
+				6341D85C18E34BBB0069ABB0 /* ClientOrderSystem */,
+				6341D85518E34BBB0069ABB0 /* Frameworks */,
+				6341D85418E34BBB0069ABB0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6341D85418E34BBB0069ABB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6341D85318E34BBB0069ABB0 /* Amex.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6341D85518E34BBB0069ABB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6341D85618E34BBB0069ABB0 /* UIKit.framework */,
+				6341D85818E34BBB0069ABB0 /* Foundation.framework */,
+				6341D85A18E34BBB0069ABB0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6341D85C18E34BBB0069ABB0 /* ClientOrderSystem */ = {
+			isa = PBXGroup;
+			children = (
+				6341D86E18E34BBB0069ABB0 /* MainStoryboard.storyboard */,
+				634CC8CA18FCC8B1002DDA71 /* OrderTVC.h */,
+				634CC8CB18FCC8B1002DDA71 /* OrderTVC.m */,
+				63AFB19418F3309000A0A831 /* IOUViewController.h */,
+				63AFB19518F3309000A0A831 /* IOUViewController.m */,
+				63AB36B618F273B1006D043F /* MenuDetailViewController.h */,
+				63AB36B718F273B1006D043F /* MenuDetailViewController.m */,
+				6341D87918E34F9F0069ABB0 /* MenuTVC.h */,
+				6341D87A18E34F9F0069ABB0 /* MenuTVC.m */,
+				63AFB18B18F327F500A0A831 /* RestaurantTVC.h */,
+				63AFB18C18F327F500A0A831 /* RestaurantTVC.m */,
+				63AB36B318F27306006D043F /* PaymentViewController.h */,
+				63AB36B418F27306006D043F /* PaymentViewController.m */,
+				63CDEE7618F60B5100FB82AB /* mastercard.png */,
+				63CDEE7718F60B5100FB82AB /* amex.jpg */,
+				63CDEE7818F60B5100FB82AB /* paypal-logo.jpg */,
+				6375499618E36CED00CC4231 /* img */,
+				6341D85D18E34BBB0069ABB0 /* Supporting Files */,
+			);
+			path = ClientOrderSystem;
+			sourceTree = "<group>";
+		};
+		6341D85D18E34BBB0069ABB0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6341D86518E34BBB0069ABB0 /* AppDelegate.h */,
+				6325368618EF4BC3002C34C5 /* menu.png */,
+				6325368E18EF4D7D002C34C5 /* msg.png */,
+				63AFB19918F33CEE00A0A831 /* signin.png */,
+				63AFB19718F334DE00A0A831 /* iou.png */,
+				6325368718EF4BC3002C34C5 /* pay.png */,
+				6341D86618E34BBB0069ABB0 /* AppDelegate.m */,
+				6341D85E18E34BBB0069ABB0 /* ClientOrderSystem-Info.plist */,
+				6341D85F18E34BBB0069ABB0 /* InfoPlist.strings */,
+				6341D86218E34BBB0069ABB0 /* main.m */,
+				6341D86418E34BBB0069ABB0 /* ClientOrderSystem-Prefix.pch */,
+				6341D86818E34BBB0069ABB0 /* Default.png */,
+				6341D86A18E34BBB0069ABB0 /* Default@2x.png */,
+				6341D86C18E34BBB0069ABB0 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6375499618E36CED00CC4231 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				6375499718E36CED00CC4231 /* angry_birds_cake.jpg */,
+				6375499818E36CED00CC4231 /* creme_brelee.jpg */,
+				6375499918E36CED00CC4231 /* egg_benedict.jpg */,
+				6375499A18E36CED00CC4231 /* full_breakfast.jpg */,
+				6375499B18E36CED00CC4231 /* green_tea.jpg */,
+				6375499C18E36CED00CC4231 /* ham_and_cheese_panini.jpg */,
+				6375499D18E36CED00CC4231 /* ham_and_egg_sandwich.jpg */,
+				6375499E18E36CED00CC4231 /* hamburger.jpg */,
+				6375499F18E36CED00CC4231 /* instant_noodle_with_egg.jpg */,
+				637549A018E36CED00CC4231 /* japanese_noodle_with_pork.jpg */,
+				637549A118E36CED00CC4231 /* mushroom_risotto.jpg */,
+				637549A218E36CED00CC4231 /* noodle_with_bbq_pork.jpg */,
+				637549A318E36CED00CC4231 /* starbucks_coffee.jpg */,
+				637549A418E36CED00CC4231 /* thai_shrimp_cake.jpg */,
+				637549A518E36CED00CC4231 /* vegetable_curry.jpg */,
+				637549A618E36CED00CC4231 /* white_chocolate_donut.jpg */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6341D85218E34BBB0069ABB0 /* ClientOrderSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6341D87618E34BBB0069ABB0 /* Build configuration list for PBXNativeTarget "ClientOrderSystem" */;
+			buildPhases = (
+				6341D84F18E34BBB0069ABB0 /* Sources */,
+				6341D85018E34BBB0069ABB0 /* Frameworks */,
+				6341D85118E34BBB0069ABB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClientOrderSystem;
+			productName = ClientOrderSystem;
+			productReference = 6341D85318E34BBB0069ABB0 /* Amex.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6341D84B18E34BBB0069ABB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Chong Lian";
+			};
+			buildConfigurationList = 6341D84E18E34BBB0069ABB0 /* Build configuration list for PBXProject "ClientOrderSystem" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6341D84A18E34BBB0069ABB0;
+			productRefGroup = 6341D85418E34BBB0069ABB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6341D85218E34BBB0069ABB0 /* ClientOrderSystem */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6341D85118E34BBB0069ABB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6341D86118E34BBB0069ABB0 /* InfoPlist.strings in Resources */,
+				6341D86918E34BBB0069ABB0 /* Default.png in Resources */,
+				6341D86B18E34BBB0069ABB0 /* Default@2x.png in Resources */,
+				6341D86D18E34BBB0069ABB0 /* Default-568h@2x.png in Resources */,
+				6341D87018E34BBB0069ABB0 /* MainStoryboard.storyboard in Resources */,
+				637549A718E36CED00CC4231 /* angry_birds_cake.jpg in Resources */,
+				637549A818E36CED00CC4231 /* creme_brelee.jpg in Resources */,
+				637549A918E36CED00CC4231 /* egg_benedict.jpg in Resources */,
+				637549AA18E36CED00CC4231 /* full_breakfast.jpg in Resources */,
+				637549AB18E36CED00CC4231 /* green_tea.jpg in Resources */,
+				637549AC18E36CED00CC4231 /* ham_and_cheese_panini.jpg in Resources */,
+				637549AD18E36CED00CC4231 /* ham_and_egg_sandwich.jpg in Resources */,
+				637549AE18E36CED00CC4231 /* hamburger.jpg in Resources */,
+				637549AF18E36CED00CC4231 /* instant_noodle_with_egg.jpg in Resources */,
+				637549B018E36CED00CC4231 /* japanese_noodle_with_pork.jpg in Resources */,
+				637549B118E36CED00CC4231 /* mushroom_risotto.jpg in Resources */,
+				637549B218E36CED00CC4231 /* noodle_with_bbq_pork.jpg in Resources */,
+				637549B318E36CED00CC4231 /* starbucks_coffee.jpg in Resources */,
+				637549B418E36CED00CC4231 /* thai_shrimp_cake.jpg in Resources */,
+				637549B518E36CED00CC4231 /* vegetable_curry.jpg in Resources */,
+				637549B618E36CED00CC4231 /* white_chocolate_donut.jpg in Resources */,
+				6325368818EF4BC3002C34C5 /* menu.png in Resources */,
+				6325368918EF4BC3002C34C5 /* pay.png in Resources */,
+				6325368D18EF4CDC002C34C5 /* Icon.png in Resources */,
+				6325368F18EF4D7D002C34C5 /* msg.png in Resources */,
+				63AFB19818F334DE00A0A831 /* iou.png in Resources */,
+				63AFB19A18F33CEE00A0A831 /* signin.png in Resources */,
+				63CDEE7918F60B5100FB82AB /* mastercard.png in Resources */,
+				63CDEE7A18F60B5100FB82AB /* amex.jpg in Resources */,
+				63CDEE7B18F60B5100FB82AB /* paypal-logo.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6341D84F18E34BBB0069ABB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6341D86318E34BBB0069ABB0 /* main.m in Sources */,
+				6341D86718E34BBB0069ABB0 /* AppDelegate.m in Sources */,
+				6341D87B18E34F9F0069ABB0 /* MenuTVC.m in Sources */,
+				63AB36B518F27306006D043F /* PaymentViewController.m in Sources */,
+				63AB36B818F273B1006D043F /* MenuDetailViewController.m in Sources */,
+				63AFB18D18F327F500A0A831 /* RestaurantTVC.m in Sources */,
+				63AFB19618F3309000A0A831 /* IOUViewController.m in Sources */,
+				634CC8CC18FCC8B1002DDA71 /* OrderTVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6341D85F18E34BBB0069ABB0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6341D86018E34BBB0069ABB0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6341D86E18E34BBB0069ABB0 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6341D86F18E34BBB0069ABB0 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6341D87418E34BBB0069ABB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6341D87518E34BBB0069ABB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6341D87718E34BBB0069ABB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClientOrderSystem/ClientOrderSystem-Prefix.pch";
+				INFOPLIST_FILE = "ClientOrderSystem/ClientOrderSystem-Info.plist";
+				PRODUCT_NAME = Amex;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6341D87818E34BBB0069ABB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClientOrderSystem/ClientOrderSystem-Prefix.pch";
+				INFOPLIST_FILE = "ClientOrderSystem/ClientOrderSystem-Info.plist";
+				PRODUCT_NAME = Amex;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6341D84E18E34BBB0069ABB0 /* Build configuration list for PBXProject "ClientOrderSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6341D87418E34BBB0069ABB0 /* Debug */,
+				6341D87518E34BBB0069ABB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6341D87618E34BBB0069ABB0 /* Build configuration list for PBXNativeTarget "ClientOrderSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6341D87718E34BBB0069ABB0 /* Debug */,
+				6341D87818E34BBB0069ABB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6341D84B18E34BBB0069ABB0 /* Project object */;
+}
