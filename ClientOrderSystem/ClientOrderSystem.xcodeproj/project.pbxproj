@@ -39,6 +39,7 @@
 		637549B418E36CED00CC4231 /* thai_shrimp_cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 637549A418E36CED00CC4231 /* thai_shrimp_cake.jpg */; };
 		637549B518E36CED00CC4231 /* vegetable_curry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 637549A518E36CED00CC4231 /* vegetable_curry.jpg */; };
 		637549B618E36CED00CC4231 /* white_chocolate_donut.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 637549A618E36CED00CC4231 /* white_chocolate_donut.jpg */; };
+		638A4A1818FF3B5700D7AF4D /* social.png in Resources */ = {isa = PBXBuildFile; fileRef = 638A4A1718FF3B5700D7AF4D /* social.png */; };
 		63AB36B518F27306006D043F /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AB36B418F27306006D043F /* PaymentViewController.m */; };
 		63AB36B818F273B1006D043F /* MenuDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AB36B718F273B1006D043F /* MenuDetailViewController.m */; };
 		63AFB18D18F327F500A0A831 /* RestaurantTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AFB18C18F327F500A0A831 /* RestaurantTVC.m */; };
@@ -89,6 +90,7 @@
 		637549A418E36CED00CC4231 /* thai_shrimp_cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thai_shrimp_cake.jpg; sourceTree = "<group>"; };
 		637549A518E36CED00CC4231 /* vegetable_curry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vegetable_curry.jpg; sourceTree = "<group>"; };
 		637549A618E36CED00CC4231 /* white_chocolate_donut.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white_chocolate_donut.jpg; sourceTree = "<group>"; };
+		638A4A1718FF3B5700D7AF4D /* social.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = social.png; sourceTree = "<group>"; };
 		63AB36B318F27306006D043F /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
 		63AB36B418F27306006D043F /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
 		63AB36B618F273B1006D043F /* MenuDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuDetailViewController.h; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				63AB36B318F27306006D043F /* PaymentViewController.h */,
 				63AB36B418F27306006D043F /* PaymentViewController.m */,
 				63CDEE7618F60B5100FB82AB /* mastercard.png */,
+				638A4A1718FF3B5700D7AF4D /* social.png */,
 				63CDEE7718F60B5100FB82AB /* amex.jpg */,
 				63CDEE7818F60B5100FB82AB /* paypal-logo.jpg */,
 				6375499618E36CED00CC4231 /* img */,
@@ -296,6 +299,7 @@
 				63CDEE7918F60B5100FB82AB /* mastercard.png in Resources */,
 				63CDEE7A18F60B5100FB82AB /* amex.jpg in Resources */,
 				63CDEE7B18F60B5100FB82AB /* paypal-logo.jpg in Resources */,
+				638A4A1818FF3B5700D7AF4D /* social.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
